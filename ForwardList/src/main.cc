@@ -38,10 +38,17 @@ int main()
   fl2.push_front(200);
   fl2.print();
 
-  std::cout << "Appending the value of 204 to the fl2 ... " << std::endl;
+  std::cout << "Appending the value of 204 to the fl2 ..." << std::endl;
   fl2.push_back(204);
   fl2.print();
 
+  std::cout << "Reversing the fl2 list ..." << std::endl;
+  fl2.reverse();
+  fl2.print();
+
+  std::cout << "Reversing the empty list [fl0] ..." << std::endl;
+  fl0.reverse();
+  fl0.print();
 
   std::cout << "Done. Will exit now." << std::endl;
   return 0;

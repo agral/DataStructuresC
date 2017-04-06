@@ -50,6 +50,9 @@ class ForwardList
   // Prints the contents of the list to a standard output.
   void print();
 
+  // Reverses the list - the last element becomes the first one and so on.
+  void reverse();
+
  private:
   ForwardListNode *head;
   ForwardListNode *tail;

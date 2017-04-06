@@ -115,3 +115,23 @@ void ForwardList::print()
   std::cout << "]" << std::endl;
 }
 
+void ForwardList::reverse()
+{
+  ForwardListNode *prev = nullptr;
+  ForwardListNode *curr = this->head;
+  ForwardListNode *next;
+
+  ForwardListNode *oldHead = this->head;
+  ForwardListNode *oldTail = this->tail;
+
+  while (curr != nullptr)
+  {
+    next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
+  }
+
+  this->head = oldTail;
+  this->tail = oldHead;
+}
