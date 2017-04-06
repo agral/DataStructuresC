@@ -24,7 +24,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.cc
 
 clean:
 	$(RM) $(OBJECTS)
-	$(RM) $(PROGRAM_NAME)
+	$(RM) $(BINDIR)/$(PROGRAM_NAME)
 
 dirs:
 	@mkdir -p $(BINDIR)
